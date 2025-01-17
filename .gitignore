@@ -1,0 +1,9 @@
+/vendor/
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+/logs/*
+!/logs/.gitkeep
++.phpunit.result.cache 
