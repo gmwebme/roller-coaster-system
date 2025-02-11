@@ -26,8 +26,6 @@ services:
       - REDIS_HOST=${REDIS_HOST}
       - REDIS_PORT=${REDIS_PORT}
       - REDIS_PASSWORD=${REDIS_PASSWORD}
-      extra_hosts:
-        - "redisrc.orb.local:host-gateway"
 
 networks:
   slim-network:
