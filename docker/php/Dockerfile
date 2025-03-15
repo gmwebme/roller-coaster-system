@@ -10,9 +10,6 @@ RUN apt-get update && apt-get install -y \
     zip \
     unzip
 
-# Add host.docker.internal to hosts file
-RUN echo "host.docker.internal host-gateway" >> /etc/hosts
-
 # Install Redis extension
 RUN pecl install redis && docker-php-ext-enable redis
 
